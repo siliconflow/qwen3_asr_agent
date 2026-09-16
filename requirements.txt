@@ -1,0 +1,9 @@
+fastapi>=0.111.1
+httpx>=0.27.0
+uvicorn>=0.35.0
+prometheus-client>=0.20.0
+# PyAV: audio format conversion (mp3/m4a/... -> 16kHz mono WAV)
+# >=10 for add_stream(layout=...) support; <18 keeps py3.10 cp310 wheels
+av>=10.0,<18
+# multipart parse_options_header used by app.py (maybe_convert_audio)
+python-multipart>=0.0.20
